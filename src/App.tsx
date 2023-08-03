@@ -3,7 +3,12 @@ import "./App.css";
 function App() {
   return (
     <>
-      <div className="ip-address-container"></div>
+      <div className="all-content-container">
+        <div className="ip-address-container">
+          <h1>IP Address Tracker</h1>
+        </div>
+        <div className="ip-maps-container"></div>
+      </div>
     </>
   );
 }

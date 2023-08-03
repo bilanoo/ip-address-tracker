@@ -2,10 +2,17 @@
   margin: 0 auto;
   text-align: center;
 }
-
+.all-content-container {
+  display: grid;
+  grid-template-rows: 400px 1fr;
+}
 .ip-address-container {
   background-image: url("images/pattern-bg-mobile.png");
-  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
   height: 100%;
   display: flex;
+  align-content: center;
+  justify-content: center;
 }
