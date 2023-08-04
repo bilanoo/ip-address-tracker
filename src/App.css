@@ -16,3 +16,9 @@
   align-content: center;
   justify-content: center;
 }
+
+.ip-maps-main-container {
+  height: 100%;
+}
+#map {
+}
