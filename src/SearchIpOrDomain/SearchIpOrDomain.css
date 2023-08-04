@@ -24,9 +24,24 @@
   border-top-right-radius: 18px;
   border-bottom-right-radius: 18px;
   cursor: pointer;
-  transition: 3s;
+  transition: 1s;
 }
 
 .search-button:hover {
-  border: 2px solid white;
+  border: 1px solid white;
+}
+
+@media only screen and (min-width: 992px) {
+  .search-container {
+    width: 550px;
+    height: 50px;
+  }
+
+  .search-input {
+    width: 90%;
+  }
+
+  .search-button {
+    width: 10%;
+  }
 }
