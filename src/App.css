@@ -10,8 +10,8 @@
   position: relative;
   height: 40vh;
   display: flex;
+  flex-direction: column;
   align-content: center;
-  justify-content: center;
 }
 
 .ip-maps-main-container {
