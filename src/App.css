@@ -7,7 +7,6 @@
   background-image: url("images/pattern-bg-mobile.png");
   background-size: cover;
   background-repeat: no-repeat;
-  position: relative;
   height: 40vh;
   display: flex;
   flex-direction: column;

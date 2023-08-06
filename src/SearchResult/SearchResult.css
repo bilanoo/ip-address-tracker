@@ -1,0 +1,42 @@
+.search-result-container {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  width: 90%;
+  top: 150px;
+  background-color: white;
+  border-radius: 13px;
+  z-index: 999; /* Add this line to set the z-index */
+}
+
+.each-information-container {
+  color: black;
+}
+
+.information {
+  padding: 0;
+  margin: 0;
+}
+
+.title {
+  color: var(--ip-information-text-information-color);
+  font-size: 10px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.result {
+  font-weight: 900;
+  font-size: 20px;
+}
+
+@media only screen and (min-width: 550px) {
+  .search-result-container {
+    height: 200px;
+    flex-direction: row;
+  }
+}
