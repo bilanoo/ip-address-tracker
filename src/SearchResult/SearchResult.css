@@ -13,6 +13,9 @@
   background-color: white;
   border-radius: 13px;
   z-index: 1000;
+  word-wrap: break-word;
+  white-space: pre-line;
+  overflow-wrap: break-word;
 }
 
 .each-information-container {
@@ -38,6 +41,9 @@
 .result {
   font-weight: 900;
   font-size: 20px;
+  word-wrap: break-word;
+  white-space: pre-line;
+  overflow-wrap: break-word;
 }
 
 @media only screen and (min-width: 550px) {

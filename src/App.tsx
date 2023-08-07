@@ -2,14 +2,31 @@ import { MapContainer, Marker, Popup, TileLayer } from "react-leaflet";
 import "./App.css";
 import { SearchIpOrDomain } from "./SearchIpOrDomain";
 import { SearchResult } from "./SearchResult";
+import { GetIpOrDomainService } from "./services/GetIpOrDomainService";
+import { useEffect, useState } from "react";
 
 function App() {
+  const [searchedAddress, setSearchAddress] = useState("");
+
+  const { data, isLoading, refetch } = GetIpOrDomainService({
+    searchedAddress,
+  });
+
+  useEffect(() => {
+    // Fetch data once on page load
+    refetch();
+  }, [refetch]);
+
   return (
     <>
       <div className="ip-address-container">
         <h1 style={{ padding: "0", fontSize: "25px" }}>IP Address Tracker</h1>
 
-        <SearchIpOrDomain />
+        <SearchIpOrDomain
+          searchedAddress={searchedAddress}
+          setSearchedAddress={setSearchAddress}
+          refetch={refetch}
+        />
       </div>
       <div className="ip-maps-main-container" id="map">
         <MapContainer
@@ -38,7 +55,7 @@ function App() {
             alignItems: "center",
           }}
         >
-          <SearchResult />
+          {!isLoading && <SearchResult data={data} />}
         </div>
       </div>
     </>

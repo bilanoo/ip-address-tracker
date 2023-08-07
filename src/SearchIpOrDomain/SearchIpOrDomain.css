@@ -17,6 +17,9 @@
   padding-left: 20px;
 }
 
+.not-allowed {
+  cursor: not-allowed !important;
+}
 .search-button {
   border: none;
   width: 20%;
