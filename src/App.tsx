@@ -10,15 +10,6 @@ function App() {
         <h1 style={{ padding: "0", fontSize: "25px" }}>IP Address Tracker</h1>
 
         <SearchIpOrDomain />
-        <div
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-          }}
-        >
-          <SearchResult />
-        </div>
       </div>
       <div className="ip-maps-main-container" id="map">
         <MapContainer
@@ -40,6 +31,15 @@ function App() {
             </Popup>
           </Marker>
         </MapContainer>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+        >
+          <SearchResult />
+        </div>
       </div>
     </>
   );

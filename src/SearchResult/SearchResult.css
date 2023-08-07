@@ -2,15 +2,17 @@
   position: absolute;
   display: flex;
   flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  top: -180px;
   gap: 20px;
   justify-content: center;
   align-items: center;
   height: 300px;
   width: 90%;
-  top: 150px;
   background-color: white;
   border-radius: 13px;
-  z-index: 999; /* Add this line to set the z-index */
+  z-index: 1000;
 }
 
 .each-information-container {
@@ -21,7 +23,11 @@
   padding: 0;
   margin: 0;
 }
-
+.divider {
+  display: none;
+  border-left: 1px solid lightgray;
+  height: 50px;
+}
 .title {
   color: var(--ip-information-text-information-color);
   font-size: 10px;
@@ -36,7 +42,14 @@
 
 @media only screen and (min-width: 550px) {
   .search-result-container {
-    height: 200px;
+    top: -75px;
+    height: 150px;
+
     flex-direction: row;
+    text-align: start;
+  }
+
+  .divider {
+    display: block;
   }
 }
