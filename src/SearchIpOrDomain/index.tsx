@@ -48,7 +48,7 @@ export const SearchIpOrDomain = ({
           type="submit"
           disabled={!searchedAddress}
         >
-          <img src="images/icon-arrow.svg" />
+          <img src="src/assets/images/icon-arrow.svg" />
         </button>
       </div>
     </form>

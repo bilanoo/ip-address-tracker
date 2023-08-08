@@ -4,7 +4,7 @@
 }
 
 .ip-address-container {
-  background-image: url("images/pattern-bg-mobile.png");
+  background-image: url("src/assets/images/pattern-bg-mobile.png");
   background-size: cover;
   background-repeat: no-repeat;
   height: 40vh;
@@ -20,6 +20,6 @@
 
 @media only screen and (min-width: 992px) {
   .ip-address-container {
-    background-image: url("images/pattern-bg-desktop.png");
+    background-image: url("src/assets/images/pattern-bg-desktop.png");
   }
 }
