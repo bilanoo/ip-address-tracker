@@ -3,6 +3,7 @@ import "./SearchIpOrDomain.css";
 interface SearchIpOrDomainProps {
   searchedAddress: string;
   setSearchedAddress: React.Dispatch<React.SetStateAction<string>>;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   refetch: any;
 }
 export const SearchIpOrDomain = ({
@@ -20,10 +21,7 @@ export const SearchIpOrDomain = ({
     event.preventDefault();
 
     if (validate(searchedAddress)) {
-      console.log("valid");
       refetch();
-    } else {
-      console.log("invalid");
     }
   }
 

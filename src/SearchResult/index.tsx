@@ -8,7 +8,9 @@ export const SearchResult = ({ data }: SearchResultProps) => {
     <div className="search-result-container">
       <div className="each-information-container">
         <p className="information title">IP ADDRESS</p>
-        <p className="information result">{data.ip}</p>
+        <p className="information result">
+          {data.ip_address ? data.ip_address : "Not Available"}
+        </p>
       </div>
 
       <div className="divider" />
@@ -16,7 +18,8 @@ export const SearchResult = ({ data }: SearchResultProps) => {
       <div className="each-information-container">
         <p className="information title">LOCATION</p>
         <p className="information result">
-          {data.location.region}, {data.location.country}
+          {data.region ? data.region : "Not Available"}
+          {data.country && `, ${data.country}`}
         </p>
       </div>
 
@@ -24,14 +27,22 @@ export const SearchResult = ({ data }: SearchResultProps) => {
 
       <div className="each-information-container">
         <p className="information title">TIMEZONE</p>
-        <p className="information result">{data.location.timezone}</p>
+        <p className="information result">
+          {data.timezone.name
+            ? `${data.timezone.name}, ${data.timezone.abbreviation}`
+            : "Not Available"}
+        </p>
       </div>
 
       <div className="divider" />
 
       <div className="each-information-container">
         <p className="information title">ISP</p>
-        <p className="information result">{data.isp}</p>
+        <p className="information result">
+          {data.connection.autonomous_system_organization
+            ? data.connection.autonomous_system_organization
+            : "Not Available"}
+        </p>
       </div>
     </div>
   );

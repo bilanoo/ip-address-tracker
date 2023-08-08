@@ -8,7 +8,7 @@ export const GetIpOrDomainService = ({
 }: GetIpOrDomainServiceProps) => {
   const getDataViaIp = async () => {
     const response = await fetch(
-      `https://geo.ipify.org/api/v2/country?apiKey=at_9v4PLJEcWzxIeXXnLNM9Wlt1BwNDX${
+      `https://ipgeolocation.abstractapi.com/v1/?api_key=79214059d1c2440285d0b5a39c814cf9${
         searchedAddress && `&ipAddress=${searchedAddress}`
       }`
     );

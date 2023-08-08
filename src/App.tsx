@@ -29,25 +29,31 @@ function App() {
         />
       </div>
       <div className="ip-maps-main-container" id="map">
-        <MapContainer
-          center={[51.505, -0.09]}
-          zoom={16}
-          style={{ height: "100%" }}
-        >
-          <TileLayer
-            url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-            attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
-          />
-          <Marker position={[51.505, -0.09]}>
-            <Popup>
-              <span>
-                A pretty CSS3 popup.
-                <br />
-                Easily customizable.
-              </span>
-            </Popup>
-          </Marker>
-        </MapContainer>
+        {data && (
+          <MapContainer
+            center={
+              !isLoading ? [data.latitude, data.longitude] : [51.505, -0.09]
+            }
+            zoom={16}
+            style={{ height: "100%" }}
+            zoomControl={false}
+            attributionControl={false}
+          >
+            <TileLayer
+              url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+              attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+            />
+            <Marker
+              position={
+                !isLoading ? [data.latitude, data.longitude] : [51.505, -0.09]
+              }
+            >
+              <Popup>
+                <span>This is a rough estimate of the location.</span>
+              </Popup>
+            </Marker>
+          </MapContainer>
+        )}
         <div
           style={{
             display: "flex",
