@@ -31,7 +31,7 @@
 }
 
 .search-button:hover {
-  border: 1px solid white;
+  background-color: var(--very-dark-grey);
 }
 
 @media only screen and (min-width: 992px) {
