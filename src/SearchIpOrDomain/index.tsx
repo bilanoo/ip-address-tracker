@@ -1,5 +1,5 @@
 import "./SearchIpOrDomain.css";
-
+import ArrowIcon from "../assets/images/icon-arrow.svg";
 interface SearchIpOrDomainProps {
   searchedAddress: string;
   setSearchedAddress: React.Dispatch<React.SetStateAction<string>>;
@@ -48,7 +48,7 @@ export const SearchIpOrDomain = ({
           type="submit"
           disabled={!searchedAddress}
         >
-          <img src="src/assets/images/icon-arrow.svg" />
+          <img src={ArrowIcon} />
         </button>
       </div>
     </form>
