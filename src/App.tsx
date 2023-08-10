@@ -78,31 +78,33 @@ function App() {
         >
           {!isLoading && <SearchResult data={data} />}
         </div>
-        <footer className="footer-notes">
-          <p
-            style={{
-              color: "black",
-              margin: "0",
-              marginBottom: "2px",
-              textAlign: "center",
-            }}
-          >
-            Challenge by{" "}
-            <a
-              href="https://www.frontendmentor.io/challenges/ip-address-tracker-I8-0yYAH0"
-              className="hyperlink"
+        {data && (
+          <footer className="footer-notes">
+            <p
+              style={{
+                color: "black",
+                margin: "0",
+                marginBottom: "2px",
+                textAlign: "center",
+              }}
             >
-              Frontend Mentor
-            </a>{" "}
-            coded by{" "}
-            <a
-              href="https://github.com/bilanoo/ip-address-tracket"
-              className="hyperlink"
-            >
-              Bilal
-            </a>
-          </p>
-        </footer>
+              Challenge by{" "}
+              <a
+                href="https://www.frontendmentor.io/challenges/ip-address-tracker-I8-0yYAH0"
+                className="hyperlink"
+              >
+                Frontend Mentor
+              </a>{" "}
+              coded by{" "}
+              <a
+                href="https://github.com/bilanoo/ip-address-tracket"
+                className="hyperlink"
+              >
+                Bilal
+              </a>
+            </p>
+          </footer>
+        )}
       </div>
     </>
   );
