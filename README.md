@@ -39,7 +39,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Solution](https://github.com/bilanoo/ip-address-tracket/tree/main/src)
-- Live Site URL: [Live](https://graceful-biscochitos-846c8c.netlify.app/)
+- Live Site URL: [Live](https://ip-tracker-by-bilanoo.netlify.app/))
 
 ### Built with
 
