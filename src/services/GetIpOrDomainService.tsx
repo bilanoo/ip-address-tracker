@@ -9,7 +9,7 @@ export const GetIpOrDomainService = ({
   const getDataViaIp = async () => {
     const response = await fetch(
       `https://ipgeolocation.abstractapi.com/v1/?api_key=79214059d1c2440285d0b5a39c814cf9${
-        searchedAddress && `&ipAddress=${searchedAddress}`
+        searchedAddress && `&ip_address=${searchedAddress}`
       }`
     );
 
