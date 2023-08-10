@@ -22,4 +22,21 @@
   .ip-address-container {
     background-image: url("/src/assets/images/pattern-bg-desktop.png");
   }
+  .footer-notes {
+    background-image: url("/src/assets/images/pattern-bg-desktop.png");
+  }
+}
+
+.footer-notes {
+  display: flex;
+  justify-content: center;
+  font-weight: 900;
+  background-color: #5670d7;
+  background-image: url("/src/assets/images/pattern-bg-mobile.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.hyperlink {
+  color: white;
 }
