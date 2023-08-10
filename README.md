@@ -33,8 +33,8 @@ Users should be able to:
 
 ### Screenshot
 
-![[Design desktop preview for the IP address tracker coding challenge(./design/desktop-design.jpg)
-![[Design mobile preview for the IP address tracker coding challenge(./design/mobile-design.jpg)
+![Design desktop preview for the IP address tracker coding challenge](./design/desktop-design.jpg)
+![Design mobile preview for the IP address tracker coding challenge](./design/mobile-design.jpg)
 
 ### Links
 
