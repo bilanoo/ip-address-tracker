@@ -56,10 +56,6 @@ Users should be able to:
 
 I have learned how to manipulate the maps for my desired layout. Effectively use Flexbox and enhance my overall coding skills.
 
-### Continued development
-
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
 ## Author
 
 - GitHub - [bilanoo](https://github.com/bilanoo)
